@@ -1,0 +1,113 @@
+
+/* General */
+a {
+    text-decoration: none;
+}
+
+body {
+    
+    background-color: #f2f1f0;
+}
+
+/* Header  */
+header #profile {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header div #name {
+    /* border: 2px solid red; */
+    margin-right: 10px;
+    font-size: 20px;
+}
+#pic img {
+    /* border: 2px solid #dddddd; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+/* Navigation */
+header #navigation {
+    /* border: 2px solid black; */
+    position: fixed;
+    width: 15%;
+    border-left-style: solid;
+    border-color: #636463;
+    border-width: 3px;
+    line-height: 40px;
+}
+
+#navigation ul {
+    list-style-type: none;
+}
+
+li a {
+    color: #636463;
+    font-size: 25px;
+    
+}
+
+li a:hover {
+    padding-left: 10px;
+    color: #9e9f9e;
+    transition: 1s;
+    font-style: italic;
+}
+
+
+/*  Body */
+main {
+    /* border: 2px solid black; */
+    margin-left: 15%;
+}
+
+main div {
+    /* border: 2px solid red; */
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+#intro p::first-letter {
+    font-size: 40px;
+}
+
+
+#vt {
+    color: #800000;
+}
+
+/* Mobile version */
+@media (max-width: 540px) {
+
+    header #navigation {
+        border: none;
+        line-height: 30px;
+    }
+    li a {
+        margin-left: -40px;
+        font-size: 18px;
+        
+    }
+
+    h1 {
+        padding-bottom: 25px;
+        font-size: 35px;
+    }
+
+    main div {
+        font-size: 15px;
+        margin-right: 5%;
+    }
+}
+
