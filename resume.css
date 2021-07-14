@@ -104,3 +104,49 @@ main section .description {
     margin-top: -20px;
 }
 
+/* Mobile version */
+@media (max-width: 540px) {
+
+    header #navigation {
+        border: none;
+        line-height: 30px;
+    }
+    li a {
+        margin-left: -40px;
+        font-size: 18px;
+        
+    }
+
+    h1 {
+        padding-bottom: 25px;
+        font-size: 35px;
+    }
+
+    main section {
+        margin-left: 15%;
+        margin-right: 5%;
+    }
+
+    main section h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    main section p {
+        font-size: 16px;
+    }
+    main section .bold {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    main section .italic {
+        font-style: italic;
+        font-size: 16px;
+    }
+    
+    main section .description {
+        margin-left: 10%;
+        font-size: 16px;
+        margin-top: -10px;
+    }
+}
