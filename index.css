@@ -1,86 +1,133 @@
 
 /* General */
-a {
-    text-decoration: none;
-}
-
 body {
+    background-color: #e0e1dd;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 18px;
     
-    background-color: #f2f1f0;
 }
-
-/* Header  */
-header #profile {
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-header div #name {
-    /* border: 2px solid red; */
-    margin-right: 10px;
-    font-size: 20px;
-}
-#pic img {
-    /* border: 2px solid #dddddd; */
+#pic {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
 
-
-/* Navigation */
-header #navigation {
-    /* border: 2px solid black; */
-    position: fixed;
-    width: 15%;
-    border-left-style: solid;
-    border-color: #636463;
-    border-width: 3px;
-    line-height: 40px;
+#name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#navigation ul {
-    list-style-type: none;
+#profile {
+    margin-bottom: 100px;
 }
-
-li a {
-    color: #636463;
-    font-size: 25px;
+h1 {
+    font-family: 'Inconsolata', monospace; 
+    padding: 10% 10%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
     
 }
 
-li a:hover {
-    padding-left: 10px;
-    color: #9e9f9e;
-    transition: 1s;
+h2 {
+    border-bottom: 1px solid #1b263b;
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace; 
+    padding-top: 10%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.description {
+    margin-left: 10%;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+/* side bar */
+#left-side-bar {
+    background-color:#0d1b2a;
+    min-width: 60px;
+    opacity: 0.85;
+}
+
+#sideNavColl {
+    position: fixed;
+    padding-top: 15%;
+    
+}
+
+#nav-list a {
+    color: #d7dace;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}
+
+#nav-list a:hover {
+    /* color: #415a77; */
+    font-style: italic;
+    transition: 2s;
+}
+
+#nav-list a.active {
+    color: #415a77;
     font-style: italic;
 }
 
-
-/*  Body */
-main {
-    /* border: 2px solid black; */
-    margin-left: 15%;
+.resume {
+    margin-top: 150px;
+    background-color: #415a77;
+    color: #d7dace;
 }
 
-main div {
-    /* border: 2px solid red; */
-    font-size: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+.navbar-toggler {
+    margin-top: 30px;
+    margin-left: 0;
+    position: fixed;
 }
 
-h1 {
-    text-align: center;
-    padding-bottom: 50px;
-    font-family: cursive;
-    font-size: 50px;
+#nav-list-canvas a {
+    color: #d7dace;
+    font-size: 15px;
 }
 
-#intro p::first-letter {
+/* body */
+
+.container {
+    padding: 7% 10%;
+    overflow-y: scroll;
+    position: relative;
+    scroll-behavior: auto;
+}
+
+p.intro::first-letter {
     font-size: 40px;
 }
+
+.offcanvas {
+    width: 600px;
+    background-color:#0d1b2a;
+    color: #d7dace;
+}
+
+.X {
+    color: #d7dace;
+}
+
+
 
 
 #vt {
@@ -88,26 +135,10 @@ h1 {
 }
 
 /* Mobile version */
-@media (max-width: 540px) {
-
-    header #navigation {
-        border: none;
-        line-height: 30px;
-    }
-    li a {
-        margin-left: -40px;
-        font-size: 18px;
-        
-    }
-
-    h1 {
-        padding-bottom: 25px;
-        font-size: 35px;
-    }
-
-    main div {
-        font-size: 15px;
-        margin-right: 5%;
+@media (max-width: 991px) {
+    .offcanvas {
+        width: 110px;
+        opacity: 0.8;
     }
 }
 
