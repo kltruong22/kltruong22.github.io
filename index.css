@@ -51,7 +51,7 @@ h2 {
 }
 
 .description {
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 18px;
     margin-top: -20px;
 }
@@ -123,15 +123,23 @@ p.intro::first-letter {
     color: #d7dace;
 }
 
+/* #description-2 {
+    font-size: 16px;
+} */
+
+
 .X {
     color: #d7dace;
 }
 
 
 
-
-#vt {
+.link-vt {
     color: #800000;
+}
+
+.link {
+    color: #1b263b;
 }
 
 /* Mobile version */
@@ -139,6 +147,33 @@ p.intro::first-letter {
     .offcanvas {
         width: 110px;
         opacity: 0.8;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .bold {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .italic {
+        font-style: italic;
+        font-size: 14px;
+    }
+    
+    .description {
+        margin-left: 5%;
+        font-size: 12px;
+        margin-top: -20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+
+    #name {
+        font-size: 18px;
     }
 }
 
