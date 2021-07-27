@@ -123,7 +123,7 @@ p.intro::first-letter {
 }
 
 .offcanvas {
-    width: 600px;
+    width: 800px;
     background-color:#0d1b2a;
     color: #d7dace;
 }
@@ -140,6 +140,18 @@ p.intro::first-letter {
 
 .link {
     color: #1b263b;
+}
+
+/* Resume off canvas */
+#offcanvasScrollingLabel {
+    padding-left: 35%;
+    font-size: 40px;
+}
+
+.offcanvas-body p {
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 /* Mobile version */
