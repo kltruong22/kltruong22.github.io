@@ -112,8 +112,7 @@ h2 {
 /* body */
 
 .container {
-    padding: 7% 10%;
-    /* overflow-y: scroll; */
+    padding: 7% 10%;    
     position: relative;
     scroll-behavior: auto;
 }
