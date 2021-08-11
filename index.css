@@ -24,7 +24,7 @@ body {
 
 
 #profile {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 h1 {
     font-family: 'Inconsolata', monospace; 
@@ -117,7 +117,7 @@ h2 {
     scroll-behavior: auto;
 }
 
-p.intro::first-letter {
+#intro p::first-letter {
     font-size: 40px;
 }
 
@@ -139,6 +139,10 @@ p.intro::first-letter {
 
 .link {
     color: #1b263b;
+}
+
+main .content {
+    padding: 20% 0% 20% 0%;
 }
 
 /* Resume off canvas */
